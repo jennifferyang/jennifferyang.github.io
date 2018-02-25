@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Playfair Display SC', serif;
+    padding: 20px;
+    background: #fff;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    background: white;
+     margin-top: 20px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #FFD8E0;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #FEFBFB;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column {   
+    float: center;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subcolumn {
+ 	float: left;
+    width: 31.33%;
+    height: 500px;
+    background-color: #FFF;
+    padding-left: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+/* Footer */
+.footer {
+    padding: 2px;
+    text-align: center;
+    width: 80%;
+    background: #FFD8E0;
+    margin-top: 5px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width:100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Jenniffer Yang's Blog</h2>
+</div>
+
+<div class="topnav">
+  <a href="#">About Me</a>
+  <a href="#">Baking</a>
+  <a href="#">Travel</a>
+  <a href="#"> Cheer</a>
+  <a href="#" style="float:right">Follow my Insta</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h2  style= "text-align: center;">who i am, what i like and what i do</h2>
+      <div class = "subcolumn">
+     <img src="images/aboutMe/me.jpg" style="width:100%; height:100%;"></div>
+      
+      <div class = "subcolumn">
+      <img src="images/aboutMe/ramen.jpg" style="width:100%; height:100%;"></div>
+      
+      
+      <div class = "subcolumn">
+      <img src="images/aboutMe/balloons.jpg" style="width:100%;height:100%;"></div>
+      
+      
+      <p>Hey There..</p>
+      <p>I'm Jenny Yang and i'm a junoir at jerome high school</p>
+    </div>
+    
+    
+    <div class="card">
+      <h2  style= "text-align: center;">Veni, Vidi, Amavi</h2>
+      <div class = "subcolumn">
+      <img src="images/travel/islandskyview.jpg" style="width:100%;height: 100%;"></div>
+      <div class = "subcolumn">
+      <img src="images/travel/antelopecanyon.jpg" style="width:100%;height: 100%;"></div>
+      <div class = "subcolumn">
+      <img src="images/travel/mountain.jpg" style="width:100%;height: 100%;"></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+ 
+
+<div class="footer">
+  <h2>Dublin Ohio</h2>
+</div>
+
+</body>
+</html>
